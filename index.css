@@ -1,0 +1,786 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    grid-area: header;
+    padding-top: 0.3rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#aboutUs {
+    grid-area: aboutUs;
+}
+
+#whatWeDo {
+    grid-area: whatWeDo;
+}
+
+#hotelNews {
+    grid-area: hotelNews;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkgreen;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.75fr 1.75fr 1.75fr 0.75fr;
+    grid-template-rows: 1rem 5rem 42rem 55rem 35rem 30rem 28rem 64rem 23rem;
+    grid-template-areas:
+        "header header header header"
+        "header header header header"
+        "heroSection heroSection heroSection heroSection"
+        ". aboutUs aboutUs ."
+        ". whatWeDo whatWeDo ."
+        "rooms rooms rooms rooms"
+        ". testimonials testimonials  ."
+        ". hotelNews hotelNews . "
+        " footer footer footer footer"
+    ;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rowD{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: space-around;
+}
+
+
+.rowCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.column2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-around;
+}
+
+.titleSmSection {
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #df944a;
+}
+
+.titleBgSection {
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+    text-transform: capitalize;
+}
+
+
+/*---Navegador---*/
+
+nav{
+    padding-top: 0.7rem;
+}
+#phoneMailSection{
+    width: 20rem;
+}
+
+#socialMediaIcons{
+    width: 22rem;
+}
+
+#sectionNavBar {
+    width: 30rem;
+}
+
+ul li{
+    list-style: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+#contacSocialMedia{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    border-bottom: 0.04rem solid rgb(214, 214, 214);
+}
+#mailhotel span a{
+    color: rgb(11, 119, 190);
+    transition: color .3s;
+}
+
+#mailhotel span a:hover{
+    color: white;
+}
+
+#buttonNav{
+    padding: 18px 20px 15px;
+    border: none;
+    background-color: #dfa974;
+    color: honeydew;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.70rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.09rem;
+}
+
+#secLanguage{
+    width: 4rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#secLanguage img{
+    border-radius:100%;
+}
+/*---HeroSection---*/
+
+
+#heroSection {
+    margin-top: 0.5rem;
+    background-image: url(./assets/hero/hero-2.jpg);
+    background-size:cover;
+    grid-area: heroSection;
+}
+
+#textHeroSection{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.04rem;
+    font-weight: 400;
+    color: white;
+    max-width: 50%;
+}
+
+#textHeroSection p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#textHeroSection a{
+   color: white;
+   text-decoration: none; 
+   text-transform: uppercase;
+   font-size: 1rem;
+   font-weight: 600;
+   letter-spacing: 0.1rem;
+   padding-bottom: 0.5rem;
+   border-bottom: 0.18rem solid #dfa974;
+}
+
+h1{
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+#formHeroSection{
+    padding: 2.5rem 2rem 2rem 2.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#formHeroSection h3{
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#formHeroSection div{
+    margin-top: 0.5rem;
+}
+
+#formHeroSection div label{
+    margin-bottom: 0.3rem;
+}
+
+#formHeroSection div select{
+    width: 14rem;
+    height: 2.5rem;
+    border: 0.03rem solid #dfa974;
+}
+#formHeroSection input{
+    margin-top: 1rem;
+    width: 14rem;
+    height: 2.5rem;
+    background-color: white;
+    border: 0.03rem solid #dfa974;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #dfa974;
+}
+
+/*---AboutUs---*/
+
+#aboutUs p{
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.7rem;
+    color: #4b4b4b;
+    line-height: 1.8rem;
+}
+
+ #aboutUsImg{
+    flex: 0 0 70%;
+}
+#imgAboutUs1{
+    max-width: 100%;
+}
+
+#imgAboutUs2{
+    max-width: 100%;
+}
+
+#aboutUsText{
+    margin: 6rem 0;
+    max-width: 27rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+#aboutUsText a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    text-decoration: underline #dfa974;
+}
+
+#aboutUsText div h2{
+    margin-bottom: 2rem;
+}
+
+#aboutUsText p{
+    font-size: 1rem;
+}
+
+/*---What we Do---*/
+
+#whatWeDo{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.textWhatWeDo{
+    margin-bottom: 2rem;
+}
+#titleSectionWhatWeDo{
+    margin-bottom: 2rem;
+}
+.titleWhatWeDo {
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #4b4b4b;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.pWhatWedo{
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.8rem;
+    color: #4b4b4b;
+    line-height: 1.8rem;
+    text-align: center;
+    width: 25rem;
+    flex: 0 0 20rem;
+}
+
+/*---Room Gallery---*/
+
+#roomsGallery {
+    grid-area: rooms;
+}
+
+#roomsGalleryImg1{
+    content: url(./assets/room/room-b1.jpg);
+    width: 99%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+#roomsGalleryImg2{
+    content: url(./assets/room/room-b2.jpg);
+    width: 99%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+#roomsGalleryImg3{
+    content: url(./assets/room/room-b3.jpg);
+    width: 99%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+#roomsGalleryImg4 {
+    content: url(./assets/room/room-b4.jpg);
+    width: 99%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+/*---Testimonials---*/
+
+#testimonials {
+    grid-area: testimonials;
+    
+}
+
+#customersComments{
+    text-align: center;
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #5f5f5f;
+    word-spacing: 0.3rem;
+    margin-top: 2rem;
+    width: 65%;
+}
+
+/* .pCarroussel{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    color: #807f7f;
+    line-height: 1.2rem;
+    text-align: center;
+} */
+.nameComments{
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #555555;
+    margin-top: 2rem;
+}
+/*---Hotel news---*/
+
+#row1_hotelNewsGallery, #row2_hotelNewsGallery{
+    max-width: 100%;
+    height: auto;
+}
+
+#row1_hotelNewsGallery div img{
+    max-width: 20.44rem;
+    border-radius: 0.2rem;
+}
+
+#row1_hotelNewsGallery div{
+   width: 70%;
+   max-width: 400px;
+   height: auto;
+   border-radius: 0.1rem;
+   margin-bottom: 1rem;
+   padding-right: 0.8rem;
+   padding-left: 0.8rem;
+}
+
+#row2_hotelNewsGallery div{
+   width: 70%; 
+   height: auto;
+   border-radius: 0.3rem;
+   margin-bottom: 1.5rem;
+   padding-right: 0.8rem;
+   padding-left: 0.8rem;
+   
+}
+
+#row2_hotelNewsGallery div img{
+    height: 25rem;
+    border-radius: 0.4rem;
+}
+
+#sofaImg{
+    width: 40rem;
+    position: relative;
+}
+
+
+#hotelNewsGalleryWrapper{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/*---Footer---*/
+
+footer{
+    background-color: #222736;
+}
+
+h6{
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.19rem;
+    font-weight: 700;
+}
+
+#socialMediaFooterContainer{
+    width: 100%;
+}
+
+#socialMediaFooter{
+    padding-top: 5rem;
+    width: 20rem;
+    height: 15rem;
+    margin-right: 7rem;
+    margin-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#socialMediaFooter img{
+    margin-bottom: 1rem;
+}
+
+#socialMediaFooter div{
+    margin-top: 2rem;
+}
+
+#contactFooter{
+    padding-top: 5rem;
+    width: 25rem;
+    height: 15rem;
+    text-align: left;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#subscribeNewsFooter{
+    padding-top: 5rem;
+    width: 20rem;
+    height: 15rem;
+    text-align: left;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.copyRightArea{
+    padding: 20px 0;
+}
+
+#containerright{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pfooter{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: rgb(185, 183, 183);
+}
+
+.titleFooter{
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #df944a
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2rem 5rem 43rem 35rem 40rem 30rem 28rem 66rem 23rem;
+        grid-template-areas:
+            "header"
+            "header"
+            "heroSection"
+            "aboutUs"
+            "whatWeDo"
+            "rooms"
+            "testimonials"
+            "hotelNews"
+            "footer"
+        ;
+    }
+
+    html{
+        font-size: 0.8rem;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+    header{
+        max-width: 80rem;
+    }
+    #heroSection {
+      max-width: 80rem;
+    }
+
+    #aboutUs{
+        max-width: 80rem;
+    }
+
+    #whatWeDo{
+        max-width: 80rem;
+        display: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .textWhatWeDo{
+        display: column;
+        flex-wrap: wrap;
+    }
+
+    .pWhatWedo{
+        font-family: 'Cabin', sans-serif;
+        font-size: 0.9rem;
+        flex: 0 0 20rem;
+    }
+    
+    #testimonials {
+        max-width: 80rem;
+    }
+
+    #roomsGalleryImg1{
+        content: url(./assets/room/room-b1.jpg);
+        width: 24%;
+        height: 100%; 
+        object-fit: cover;
+    }
+    
+    #roomsGalleryImg2{
+        content: url(./assets/room/room-b2.jpg);
+        width:24%;
+        height: 100%; 
+        object-fit: cover;
+    }
+    
+    #roomsGalleryImg3{
+        content: url(./assets/room/room-b3.jpg);
+        width: 24%;
+        height: 100%; 
+        object-fit: cover;
+    }
+    
+    #roomsGalleryImg4 {
+        content: url(./assets/room/room-b4.jpg);
+        width: 24%;
+        height: 100%; 
+        object-fit: cover;
+    }
+
+    /****HotelNews****/
+
+    #hotelNews{
+        max-width: 80rem;
+    }
+    #hotelNewsGalleryWrapper{
+        max-width: 70rem;
+    }
+
+    #row1_hotelNewsGallery div img{
+        max-width: 17rem;
+    }
+
+    #row2_hotelNewsGallery div img{
+        max-width: 30rem;
+    }
+
+    /****fOOTER****/
+    footer{
+        max-width: 80rem;
+    }
+
+    #socialMediaFooter{
+        padding-top: 5rem;
+        width: 12rem;
+        height: 15rem;
+        text-align: left;
+        padding-right: 1rem;
+    }
+    
+    #contactFooter{
+        padding-top: 5rem;
+        width: 12rem;
+        height: 15rem;
+        text-align: left;  
+    }
+    
+    #subscribeNewsFooter{
+        padding-top: 5rem;
+        width: 12rem;
+        height: 15rem;
+        text-align: left;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1rem 2rem 55rem 70rem 110rem 153rem 28rem 150rem 80rem;
+        grid-template-areas:
+            " header "
+            "header"
+            "heroSection"
+            "aboutUs"
+            "whatWeDo"
+            "rooms"
+            "testimonials"
+            "hotelNews"
+            "footer"
+        ;
+    }
+
+    header {
+        max-width: 30rem;
+    }
+
+    #contacSocialMedia {
+        display: none;
+    }
+
+    nav ul li {
+        display: none;
+        padding-top: 2rem;
+    }
+
+    #heroSection {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 30rem;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+
+    #aboutUs{
+        max-width: 30rem;
+    }
+
+    #aboutUsText{
+        padding-right: 0;
+        margin-bottom: 1rem;
+        justify-content: flex-end;
+    }
+
+    #aboutUsImg {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    #aboutUsImg div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .column1{
+        justify-content: flex-end;
+    }
+
+    #whatWeDo{
+        max-width: 30rem;
+        margin-top: 3rem;
+    }
+
+    #whatWeDo div{
+        flex-wrap: wrap;
+    }
+
+    .textWhatWeDo{
+        margin: 0;
+    }
+
+    .textWhatWeDo div{
+        width: 25rem;
+    }
+
+    #roomsGallery{
+        flex-direction: column;
+        max-width:20rem;
+    }
+
+    #roomsGallery div{
+        height: 30rem;
+    }
+
+    #testimonials{
+        max-width: 30rem;
+    }
+
+    #hotelNews{
+        max-width: 20rem;
+    }
+
+    #row1_hotelNewsGallery{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #row2_hotelNewsGallery{
+        flex-direction: column;
+    }
+
+    #row1_hotelNewsGallery div img{
+        max-width: 25rem;
+    }
+
+    #row2_hotelNewsGallery div img{
+        max-width: 25rem;
+    }
+
+    footer{
+        max-width: 30rem;
+        
+    }
+
+    #socialMediaFooterContainer{
+        flex-direction: column;
+    }
+
+    #socialMediaFooterContainer div{
+        flex-direction: column;
+    }
+
+}
