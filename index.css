@@ -29,7 +29,7 @@ footer {
 .container {
     display: grid;
     grid-template-columns: 0.75fr 1.75fr 1.75fr 0.75fr;
-    grid-template-rows: 1rem 5rem 42rem 55rem 35rem 30rem 28rem 64rem 23rem;
+    grid-template-rows: 1rem 5rem 42rem 35rem 38rem 30rem 28rem 64rem 23rem;
     grid-template-areas:
         "header header header header"
         "header header header header"
@@ -256,7 +256,7 @@ h1{
 }
 
  #aboutUsImg{
-    flex: 0 0 70%;
+    flex: 0 0 50%;
 }
 #imgAboutUs1{
     max-width: 100%;
@@ -268,8 +268,8 @@ h1{
 
 #aboutUsText{
     margin: 6rem 0;
-    max-width: 27rem;
-    padding-right: 2rem;
+    max-width: 30rem;
+    /* padding-right: 2rem; */
     text-align: center;
 }
 
@@ -411,7 +411,7 @@ h1{
    height: auto;
    border-radius: 0.1rem;
    margin-bottom: 1rem;
-   padding-right: 0.8rem;
+  /*  padding-right: 0.8rem; */
    padding-left: 0.8rem;
 }
 
@@ -420,8 +420,8 @@ h1{
    height: auto;
    border-radius: 0.3rem;
    margin-bottom: 1.5rem;
-   padding-right: 0.8rem;
-   padding-left: 0.8rem;
+/*    padding-right: 0.8rem;
+ */   padding-left: 0.8rem;
    
 }
 
@@ -499,7 +499,7 @@ h6{
 
 #containerright{
     width: 100%;
-    margin-right: auto;
+  /*   margin-right: auto; */
     margin-left: auto;
 }
 
@@ -656,9 +656,9 @@ h6{
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1rem 2rem 55rem 70rem 110rem 153rem 28rem 150rem 80rem;
+        grid-template-rows: 2rem 2rem 75rem 70rem 78rem 120rem 70rem 70rem 30rem;
         grid-template-areas:
-            " header "
+            "header"
             "header"
             "heroSection"
             "aboutUs"
@@ -668,119 +668,80 @@ h6{
             "hotelNews"
             "footer"
         ;
-    }
 
+    }
+    
     header {
-        max-width: 30rem;
+        max-width: 28rem;
     }
 
     #contacSocialMedia {
         display: none;
     }
-
+    
     nav ul li {
         display: none;
         padding-top: 2rem;
     }
-
+    
     #heroSection {
-        display: flex;
-        flex-direction: column;
+        width: 28rem;
+        justify-content: space-around;
         flex-wrap: wrap;
-        max-width: 30rem;
-    }
-    h1{
-        font-size: 2.3rem;
     }
 
-    #aboutUs{
-        max-width: 30rem;
+    #aboutUs {
+        max-width: 28rem;
+        flex-wrap: wrap;
+
     }
 
     #aboutUsText{
         padding-right: 0;
         margin-bottom: 1rem;
-        justify-content: flex-end;
+        width: 25rem;
     }
 
+    #aboutUsText p{
+        font-size: 0.88rem;
+    }
     #aboutUsImg {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
+        width: 10rem;
     }
 
-    #aboutUsImg div{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-
-    .column1{
-        justify-content: flex-end;
-    }
-
-    #whatWeDo{
+    #whatWeDo {
         max-width: 30rem;
-        margin-top: 3rem;
-    }
-
-    #whatWeDo div{
         flex-wrap: wrap;
     }
 
-    .textWhatWeDo{
-        margin: 0;
-    }
-
-    .textWhatWeDo div{
-        width: 25rem;
-    }
-
-    #roomsGallery{
-        flex-direction: column;
-        max-width:20rem;
-    }
-
-    #roomsGallery div{
-        height: 30rem;
-    }
-
-    #testimonials{
-        max-width: 30rem;
-    }
-
-    #hotelNews{
-        max-width: 20rem;
-    }
-
-    #row1_hotelNewsGallery{
+    #titleSectionWhatWeDo {
         flex-direction: column;
         justify-content: center;
     }
 
-    #row2_hotelNewsGallery{
+    .textWhatWeDo{
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
     }
 
-    #row1_hotelNewsGallery div img{
+    .titleWhatWeDo {
+        margin-bottom: 2rem;
+    }
+
+    .pWhatWedo{
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 0rem;
+    }
+  
+
+    #roomsGallery{
+        flex-direction: column;
         max-width: 25rem;
     }
-
-    #row2_hotelNewsGallery div img{
-        max-width: 25rem;
-    }
-
-    footer{
-        max-width: 30rem;
-        
-    }
-
-    #socialMediaFooterContainer{
-        flex-direction: column;
-    }
-
-    #socialMediaFooterContainer div{
-        flex-direction: column;
-    }
-
 }

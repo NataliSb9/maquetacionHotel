@@ -1,0 +1,111 @@
+header {
+    max-width: 20rem;
+}
+
+#contacSocialMedia {
+    display: none;
+}
+
+nav ul li {
+    display: none;
+    padding-top: 2rem;
+}
+
+#heroSection {
+    max-width: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 2.3rem;
+}
+
+
+#aboutUs{
+    max-width: 25rem;
+} 
+
+#aboutUsText{
+    padding-right: 0;
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+
+#aboutUsImg {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#aboutUsImg div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#whatWeDo{
+    max-width: 25rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+ #whatWeDo div{
+    flex-wrap: wrap;
+}
+
+.textWhatWeDo{
+    margin: 0;
+}
+
+.textWhatWeDo div{
+    width: 27rem;
+}
+
+#roomsGallery{
+    flex-direction: column;
+    max-width: 25rem;
+} 
+
+#roomsGallery div{
+    height: 25rem;
+}
+
+#testimonials{
+    max-width: 25rem;
+}
+
+#hotelNews{
+    max-width: 25rem;
+}
+
+#row1_hotelNewsGallery{
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#row2_hotelNewsGallery{
+    flex-direction: column;
+}
+
+#row1_hotelNewsGallery div img{
+    max-width: 25rem;
+}
+
+#row2_hotelNewsGallery div img{
+    max-width: 22rem;
+}
+
+footer{
+    max-width: 25rem;
+}
+
+#socialMediaFooterContainer{
+    flex-direction: column;
+}
+
+#socialMediaFooterContainer div{
+    flex-direction: column;
+}
