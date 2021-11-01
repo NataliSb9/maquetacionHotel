@@ -656,7 +656,7 @@ h6{
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2rem 2rem 75rem 70rem 78rem 120rem 70rem 70rem 30rem;
+        grid-template-rows: 2rem 2rem 75rem 70rem 95rem 140rem 48rem 119rem 66rem;
         grid-template-areas:
             "header"
             "header"
@@ -672,7 +672,7 @@ h6{
     }
     
     header {
-        max-width: 28rem;
+        max-width: 29rem;
     }
 
     #contacSocialMedia {
@@ -685,19 +685,17 @@ h6{
     }
     
     #heroSection {
-        width: 28rem;
+        width: 29rem;
         justify-content: space-around;
         flex-wrap: wrap;
     }
 
     #aboutUs {
-        max-width: 28rem;
+        max-width: 29rem;
         flex-wrap: wrap;
-
     }
 
     #aboutUsText{
-        padding-right: 0;
         margin-bottom: 1rem;
         width: 25rem;
     }
@@ -705,6 +703,7 @@ h6{
     #aboutUsText p{
         font-size: 0.88rem;
     }
+
     #aboutUsImg {
         display: flex;
         flex-direction: column;
@@ -713,7 +712,7 @@ h6{
     }
 
     #whatWeDo {
-        max-width: 30rem;
+        max-width: 29rem;
         flex-wrap: wrap;
     }
 
@@ -739,9 +738,78 @@ h6{
         flex: 0 0 0rem;
     }
   
-
     #roomsGallery{
         flex-direction: column;
-        max-width: 25rem;
+        max-width: 28rem;
+        justify-content: space-around;
+        align-items: center;
     }
+
+    #roomsGallery div{
+        max-width: 28rem;
+    }
+
+    #roomsGalleryImg1{
+        width:100%;
+        object-fit: cover;
+    }
+    
+    #roomsGalleryImg2{
+       
+        width:100%;
+        object-fit: cover;
+    }
+    
+    #roomsGalleryImg3{
+        width:100%;
+        object-fit: cover;
+    }
+    
+    #roomsGalleryImg4 {
+        width:100%;
+        object-fit: cover;
+    }
+    #testimonials{
+        max-width: 29rem;
+        justify-content: center;
+    }
+
+    #hotelNews{
+        max-width: 29rem;
+        justify-content: center;
+    }
+    
+    #row1_hotelNewsGallery{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    #row2_hotelNewsGallery{
+        flex-direction: column;
+    }
+    
+    #row1_hotelNewsGallery div img{
+        width: 100%;
+    }
+    
+    #row2_hotelNewsGallery div img{
+        width: 100%;
+    }
+    
+    #sofaImg{
+        width: 29rem;
+    }
+    footer{
+        max-width: 29rem;
+    }
+    
+    #socialMediaFooterContainer{
+        flex-direction: column;
+    }
+    
+    #socialMediaFooterContainer div{
+        flex-direction: column;
+    }
+    
 }
