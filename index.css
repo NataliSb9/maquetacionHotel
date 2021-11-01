@@ -471,6 +471,10 @@ h6{
     margin-bottom: 1rem;
 }
 
+#socialIcions img{
+    color: rgb(247, 247, 247);
+}
+
 #socialMediaFooter div{
     margin-top: 2rem;
 }
@@ -656,7 +660,7 @@ h6{
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2rem 2rem 75rem 70rem 95rem 140rem 48rem 119rem 66rem;
+        grid-template-rows: 2rem 2rem 75rem 70rem 95rem 140rem 35rem 119rem 60rem;
         grid-template-areas:
             "header"
             "header"
@@ -671,6 +675,9 @@ h6{
 
     }
     
+    .row1{ 
+        align-items: unset;
+    }
     header {
         max-width: 29rem;
     }
@@ -787,6 +794,8 @@ h6{
     
     #row2_hotelNewsGallery{
         flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     
     #row1_hotelNewsGallery div img{
@@ -804,12 +813,48 @@ h6{
         max-width: 29rem;
     }
     
+    #socialMediaFooter{
+        margin-left: 0rem;
+    }
     #socialMediaFooterContainer{
-        flex-direction: column;
+        flex-direction: unset;
+        display: unset;
+    }
+
+    #socialIcions{
+        flex-direction: row;
     }
     
     #socialMediaFooterContainer div{
         flex-direction: column;
     }
+
+    #contactFooter{
+        height: 10rem;
+    }
+
+    #containerright{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menuFooter ul{
+        text-decoration: none;
+        width: 25rem;
+    }
+
+    #copyRightArea{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pfooter{
+        display: flex;
+        flex-direction: column;
+    }
     
+    #copyRight{
+        margin-top: 1rem;
+        align-items: center;
+    }
 }
